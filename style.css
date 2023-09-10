@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    background-image: url(img/bg.jpg);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+}
+
+.area-komputer {
+    width: 560px;
+    height: 250px;
+    margin: 5px auto;
+    background-color: pink;
+    position: relative;
+    padding-top: 40px;
+    box-sizing: border-box;
+    border-radius: 40px 40px 0 0;
+}
+
+.area-player {
+    width: 560px;
+    height: 250px;
+    margin: 5px auto;
+    background-color:aquamarine ;
+    position: relative;
+    border-radius: 0 0 40px 40px;
+}
+
+.info {
+    width: 150px;
+    height: 60px;
+    border: 5px solid salmon;
+    position: absolute;
+    background-color: rgb(230, 230, 230);
+    border-radius: 25px;
+    left: 50%;
+    margin-left: -75px;
+    top: 50%;
+    margin-top: -30px;
+    text-align: center;
+    line-height: 60px;
+    color: rgb(245, 81, 21);
+    font-size: 26px;
+    z-index: 1;
+}
+
+ul {
+    padding-top: 80px;
+    padding-left: 25px;
+}
+
+li {
+    display: inline-block;
+    margin: 0 18px;
+}
+
+img {
+    width: 130px;
+    height: 130px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.batu, .gunting, .kertas {
+    transition: .3s;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+}
+
+.batu:hover, .gunting:hover, .kertas:hover, .active {
+    box-shadow: 0 0 15px 10px pink;
+}
+
+.batu:active, .gunting:active, .kertas:active {
+    top: 2px;
+}
+
+.kucing {
+    position: fixed;
+    left: 47%;
+    z-index: 2;
+    bottom: 20%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.kucing:active {
+    bottom: 150px;
+}
